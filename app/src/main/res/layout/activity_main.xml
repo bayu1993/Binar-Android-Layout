@@ -15,7 +15,7 @@
         android:layout_height="200dp"
         android:contentDescription="@null"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_anfield" />
+        android:src="@drawable/background_anfield" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_profil"
@@ -23,7 +23,7 @@
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:src="@drawable/ic_salah"
+        android:src="@drawable/image_profil"
         app:civ_border_color="@android:color/white"
         app:civ_border_width="1dp"/>
 
@@ -167,7 +167,7 @@
                     android:paddingRight="5dp"
                     android:paddingBottom="5dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/ic_salah"/>
+                    android:src="@drawable/image_profil"/>
                     <TextView
                         android:id="@+id/txt_name_status"
                         android:layout_toEndOf="@id/img_profil_status"
@@ -183,6 +183,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/mosalah22"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:textStyle="italic"/>
+                    <TextView
+                        android:id="@+id/txt_tgl_post"
+                        android:layout_toRightOf="@id/txt_username_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07/07/2017"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
                         android:textSize="12sp"
