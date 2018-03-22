@@ -2,4 +2,4 @@
 
 create layout like twitter
 
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
