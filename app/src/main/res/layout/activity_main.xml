@@ -174,45 +174,53 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mo Salah"
+                        android:textSize="18sp"
                         android:layout_marginTop="5dp"
                         android:textStyle="bold"
                         android:textColor="#000000" />
-                    <TextView
-                        android:id="@+id/txt_username_status"
-                        android:layout_toRightOf="@id/txt_name_status"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/mosalah22"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="12sp"
-                        android:textStyle="italic"/>
-                    <TextView
-                        android:id="@+id/txt_tgl_post"
-                        android:layout_toRightOf="@id/txt_username_status"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="07/07/2017"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="12sp"
-                        android:textStyle="italic"/>
+
+                <TextView
+                    android:id="@+id/txt_username_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txt_name_status"
+                    android:layout_alignBottom="@+id/txt_name_status"
+                    android:layout_toEndOf="@+id/txt_name_status"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/mosalah22"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txt_tgl_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txt_username_status"
+                    android:layout_alignBottom="@+id/txt_username_status"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/txt_username_status"
+                    android:text="07/07/2017"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
                     <TextView
                         android:id="@+id/txt_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="King of Anfield.."
-                        android:layout_marginTop="3dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
                         android:textColor="#000000"
                         android:layout_toEndOf="@id/img_profil_status"
                         android:layout_below="@id/txt_name_status"/>
                 <LinearLayout
                     android:layout_alignParentBottom="true"
                     android:layout_toRightOf="@id/img_profil_status"
+                    android:layout_below="@id/txt_status"
                     android:paddingBottom="5dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayout">
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
